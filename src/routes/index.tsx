@@ -31,33 +31,33 @@ function Cta({ label = "QUERO MINHA CASA DESCOMPLICADA" }: { label?: string }) {
 }
 
 const pains = [
-  "Passa o fim de semana inteiro limpando e na segunda a casa já parece bagunçada de novo",
-  "Gasta uma fortuna em produtos que prometem milagre e não entregam",
-  "Esfrega panela queimada, box encardido e fogão engordurado até doer o braço",
-  "Sente vergonha quando chega visita de surpresa",
-  "Vai dormir cansada, com a sensação de que nunca dá conta de tudo",
+  "Limpa o fim de semana todo e na segunda já está bagunçado",
+  "Gasta caro em produto que não resolve",
+  "Esfrega panela, box e fogão até doer o braço",
+  "Sente vergonha com visita de surpresa",
+  "Dorme exausta sem dar conta de tudo",
 ];
 
 const benefits = [
-  ["🧽", "Limpeza que funciona", "Box, fogão, panela queimada, espelho e vaso — sem esfregar horas."],
-  ["🌿", "Casa sempre cheirosa", "Toalhas, sofá e armários perfumados com o que você já tem em casa."],
-  ["💰", "Economia de verdade", "Vinagre, limão e bicarbonato no lugar de produto caro de mercado."],
-  ["📅", "Rotina de 7 dias", "Um pouquinho por dia e a casa fica em ordem sem maratona de faxina."],
-  ["🗂️", "Planner de 4 semanas", "Você sabe exatamente o que fazer — sem esquecer nada."],
-  ["✅", "Desafio de 30 dias", "Um truque por dia, marcando seu progresso. Simples e motivador."],
+  ["🧽", "Limpeza que funciona", "Box, fogão, panela e espelho sem esfregar."],
+  ["🌿", "Casa sempre cheirosa", "Perfume duradouro com o que você já tem."],
+  ["💰", "Economia de verdade", "Vinagre, limão e bicarbonato no lugar de produto caro."],
+  ["📅", "Rotina de 7 dias", "Pouco por dia, sem maratona de faxina."],
+  ["🗂️", "Planner de 4 semanas", "Você sabe o que fazer, sem esquecer nada."],
+  ["✅", "Desafio de 30 dias", "Um truque por dia, com seu progresso marcado."],
 ];
 
 const steps = [
   ["1", "Compre por R$10", "Pagamento rápido e seguro."],
-  ["2", "Abra o app no celular", "Instale na tela inicial, sem baixar nada pesado."],
-  ["3", "Aplique um truque por dia", "Veja o que precisa, como fazer e marque como feito."],
+  ["2", "Abra o app no celular", "Instala na tela inicial em segundos."],
+  ["3", "Aplique um truque por dia", "Siga o passo a passo e marque como feito."],
 ];
 
 const faqs = [
   ["É mensalidade?", "Não. Você paga R$10 uma única vez e o acesso é seu."],
-  ["Preciso comprar produtos caros?", "Não. Os truques usam itens comuns: vinagre, limão, bicarbonato, álcool, arroz."],
-  ["Funciona no meu celular?", "Sim. Abre em qualquer celular com internet e pode ser instalado na tela inicial."],
-  ["Tenho pouco tempo, serve pra mim?", "Foi feito justamente pra isso: truques rápidos, um por dia, no seu ritmo."],
+  ["Preciso comprar produtos caros?", "Não. Só itens comuns como vinagre, limão e bicarbonato."],
+  ["Funciona no meu celular?", "Sim, em qualquer celular com internet."],
+  ["Tenho pouco tempo, serve pra mim?", "Sim. Truques rápidos, um por dia, no seu ritmo."],
 ];
 
 function Index() {
@@ -75,13 +75,13 @@ function Index() {
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 md:grid-cols-2 md:py-20">
         <div className="space-y-6">
           <span className="inline-block rounded-full bg-secondary px-4 py-1 text-sm font-bold text-secondary-foreground">
-            Para quem cuida da casa e não aguenta mais se cansar
+            Para quem cansou de faxina sem fim
           </span>
           <h1 className="text-4xl leading-tight md:text-6xl">
             Sua casa <em className="text-primary">limpa, cheirosa e organizada</em> com metade do esforço
           </h1>
           <p className="text-lg text-muted-foreground">
-            30 truques caseiros que todo mundo deveria saber — reunidos num app simples, com rotina pronta e planner semanal. Gaste menos, canse menos e tenha mais tempo pra você.
+            30 truques caseiros num app simples. Gaste menos, canse menos, sobre tempo pra você.
           </p>
           <Cta />
         </div>
@@ -100,8 +100,8 @@ function Index() {
               </li>
             ))}
           </ul>
-          <p className="mt8 mt-8 text-center text-lg">
-            O problema <strong>não é você</strong>. É que ninguém te ensinou os atalhos. Quem tem a casa sempre em ordem não trabalha mais — <strong className="text-primary">trabalha mais esperto</strong>.
+          <p className="mt-8 text-center text-lg">
+            A culpa <strong>não é sua</strong>. Só faltavam os <strong className="text-primary">atalhos certos</strong>.
           </p>
         </div>
       </section>
@@ -111,7 +111,7 @@ function Index() {
         <p className="text-center font-bold uppercase tracking-widest text-primary">Apresentando</p>
         <h2 className="mt-2 text-center text-4xl md:text-5xl">Guia da Casa Descomplicada</h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-muted-foreground">
-          Seu complemento de organização doméstica no bolso. Cada truque mostra o que você vai precisar e o passo a passo — direto ao ponto.
+          Sua casa em ordem, direto do celular. Cada truque: o que usar e como fazer.
         </p>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {benefits.map(([i, t, d]) => (
@@ -129,7 +129,7 @@ function Index() {
         <div className="mx-auto grid max-w-5xl items-center gap-10 px-5 md:grid-cols-2">
           <div>
             <h2 className="text-3xl md:text-4xl">Veja um truque de dentro do app</h2>
-            <p className="mt-4 text-secondary-foreground">Simples assim. Nada de vídeo longo, nada de enrolação. Você lê em 30 segundos e aplica na hora.</p>
+            <p className="mt-4 text-secondary-foreground">Lê em 30 segundos, aplica na hora. Sem enrolação.</p>
           </div>
           <div className="rounded-2xl bg-card p-6 shadow-xl">
             <p className="text-sm font-bold text-primary">02 • Limpeza Eficiente</p>
@@ -164,7 +164,7 @@ function Index() {
       <section className="bg-ink py-16 text-ink-foreground">
         <div className="mx-auto max-w-2xl px-5 text-center">
           <h2 className="text-3xl md:text-5xl">Menos que um produto de limpeza</h2>
-          <p className="mt-4 opacity-80">Um único desinfetante "milagroso" custa mais que isso. Aqui você leva tudo:</p>
+          <p className="mt-4 opacity-80">Um desinfetante custa mais que isso. Você leva tudo:</p>
           <ul className="mx-auto mt-6 max-w-md space-y-2 text-left">
             {["30 truques caseiros testados", "Rotina de 7 dias pronta", "Planner de 4 semanas", "Desafio com acompanhamento de progresso", "Acesso no celular, quando quiser"].map((x) => (
               <li key={x}>✔ {x}</li>
