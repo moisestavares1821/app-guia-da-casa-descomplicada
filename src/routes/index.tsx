@@ -177,11 +177,6 @@ function Index() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-5 py-16 text-center">
-        <h2 className="text-3xl md:text-4xl">⚠️ R$ 10 só até [DATA]</h2>
-        <p className="mt-4 text-lg text-muted-foreground">Depois, o app passa a custar R$ [VALOR NOVO].</p>
-      </section>
-
       <section className="bg-muted py-16">
         <div className="mx-auto max-w-3xl px-5 text-center">
           <h2 className="text-3xl md:text-4xl">Mais uma semana igual a essa, ou uma semana com rotina?</h2>
@@ -189,10 +184,6 @@ function Index() {
           <Cta label="SIM, QUERO MINHA ROTINA POR R$10 →" note="Acesso imediato • Pagamento único • Garantia de 7 dias" />
         </div>
       </section>
-
-      <div className="mx-auto max-w-3xl px-5 pt-12">
-        <p>PS: R$ 10 só até [DATA]. Depois, R$ [VALOR NOVO]. E se não gostar, você recebe tudo de volta em até 7 dias.</p>
-      </div>
 
       <section className="mx-auto max-w-3xl px-5 py-16">
         <dl className="divide-y border-y">
