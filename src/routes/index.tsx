@@ -84,7 +84,6 @@ function Index() {
           <span className="inline-block rounded-full bg-secondary px-4 py-1 text-sm font-bold text-secondary-foreground">Para quem não sabe por onde começar na casa</span>
           <h1 className="text-4xl leading-tight md:text-6xl">Sua casa em ordem. 3 tarefas por dia.</h1>
           <p className="text-lg text-muted-foreground">A rotina da semana já vem pronta no seu celular. Abra o app, faça as 3 tarefas do dia e marque. Com 30 truques caseiros para limpar e perfumar gastando menos.</p>
-          <Cta label="QUERO MINHA ROTINA POR R$10 →" note="Pagamento único de R$10 • Acesso imediato • Garantia de 7 dias" />
         </div>
         <img src={hero} alt="Mulher sorrindo em cozinha limpa segurando o celular" width={1200} height={1200} className="w-full rounded-2xl shadow-2xl" />
       </section>
