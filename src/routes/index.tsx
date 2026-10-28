@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
-import hero from "@/assets/hero.jpg";
+import heroAsset from "@/assets/antes-depois.webp.asset.json";
+const hero = heroAsset.url;
 import { Button } from "@/components/ui/button";
 import { initMetaPixel, trackInitiateCheckout } from "@/lib/meta-pixel";
 
