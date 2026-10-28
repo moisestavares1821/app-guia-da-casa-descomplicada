@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep the sales page in the index route and use the shared Button with an anchor for checkout CTAs, so navigation and click tracking remain consistent.
