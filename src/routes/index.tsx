@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
-import hero from "@/assets/hero.jpg";
+import heroAsset from "@/assets/antes-depois.webp.asset.json";
+const hero = heroAsset.url;
 import { Button } from "@/components/ui/button";
 import { initMetaPixel, trackInitiateCheckout } from "@/lib/meta-pixel";
 
@@ -85,7 +86,7 @@ function Index() {
           <h1 className="text-4xl leading-tight md:text-6xl">Sua casa em ordem. 3 tarefas por dia.</h1>
           <p className="text-lg text-muted-foreground">A rotina da semana já vem pronta no seu celular. Abra o app, faça as 3 tarefas do dia e marque. Com 30 truques caseiros para limpar e perfumar gastando menos.</p>
         </div>
-        <img src={hero} alt="Mulher sorrindo em cozinha limpa segurando o celular" width={1200} height={1200} className="w-full rounded-2xl shadow-2xl" />
+        <img src={hero} alt="Antes e depois da casa com a rotina leve" width={1200} height={1200} className="w-full rounded-2xl shadow-2xl" />
       </section>
 
       <section className="bg-muted py-16">
