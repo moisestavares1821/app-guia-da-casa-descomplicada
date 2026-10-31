@@ -117,7 +117,7 @@ function Index() {
         <p className="mt-2 text-lg text-muted-foreground">É assim que você usa todo dia.</p>
         <div className="mx-auto mt-8 w-full max-w-[360px] overflow-hidden rounded-lg border bg-card shadow-xl" style={{ aspectRatio: "9 / 16" }}>
           <iframe
-            src="https://player.vimeo.com/video/1241632846"
+            src="https://player.vimeo.com/video/1241636866"
             title="Veja o app por dentro"
             loading="lazy"
             allow="autoplay; fullscreen; picture-in-picture"
