@@ -147,18 +147,6 @@ function Index() {
         </div>
       </section>
 
-      <section className="bg-muted py-16">
-        <div className="mx-auto max-w-3xl px-5">
-          <h2 className="text-3xl md:text-4xl">Veja um dia da sua rotina</h2>
-          <p className="mt-4 text-lg text-muted-foreground">Quarta-feira. Três tarefas, nada mais:</p>
-          <ul className="mt-6 space-y-4 text-lg">
-            <li>☐ Zona: trocar a roupa de cama</li>
-            <li>☐ Fluxo: lavar toalhas e lençóis</li>
-            <li>☐ Reset de 5 minutos: louça, bancada e lixo</li>
-          </ul>
-          <p className="mt-6 font-bold text-primary">Sem pensar no que fazer. Só abrir e marcar.</p>
-        </div>
-      </section>
 
       <section className="bg-secondary py-16">
         <div className="mx-auto grid max-w-5xl items-center gap-10 px-5 md:grid-cols-2">
