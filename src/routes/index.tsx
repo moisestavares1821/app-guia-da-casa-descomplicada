@@ -147,7 +147,6 @@ function Index() {
         </div>
       </section>
 
-
       <section className="bg-secondary py-16">
         <div className="mx-auto grid max-w-5xl items-center gap-10 px-5 md:grid-cols-2">
           <div>
