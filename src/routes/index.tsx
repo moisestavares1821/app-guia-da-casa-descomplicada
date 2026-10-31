@@ -115,15 +115,32 @@ function Index() {
       <section className="mx-auto max-w-3xl px-5 py-16 text-center">
         <h2 className="text-3xl md:text-4xl">Veja o app por dentro</h2>
         <p className="mt-2 text-lg text-muted-foreground">É assim que você usa todo dia.</p>
-        <div className="mx-auto mt-8 w-full max-w-[360px] overflow-hidden rounded-lg border bg-card shadow-xl" style={{ aspectRatio: "9 / 16" }}>
-          <iframe
-            src="https://player.vimeo.com/video/1241636866"
-            title="Veja o app por dentro"
-            loading="lazy"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-            className="h-full w-full"
-          />
+        <div className="relative mx-auto mt-8 w-full max-w-[330px]">
+          {/* brilho suave atrás do celular */}
+          <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[120%] w-[140%] -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ background: "radial-gradient(circle, hsl(var(--primary) / 0.18) 0%, transparent 70%)" }} />
+          {/* corpo do celular */}
+          <div
+            className="relative rounded-[44px] p-[10px] shadow-[0_24px_48px_-12px_rgba(15,30,70,0.35)] ring-1 ring-white/10"
+            style={{ background: "linear-gradient(145deg, #2a2f3a 0%, #0d1526 100%)" }}
+          >
+            {/* botões laterais: volume (esquerda) e liga/desliga (direita) */}
+            <div aria-hidden className="pointer-events-none absolute -left-[3px] top-[90px] h-8 w-[3px] rounded-l-sm" style={{ background: "#1a2130" }} />
+            <div aria-hidden className="pointer-events-none absolute -left-[3px] top-[130px] h-8 w-[3px] rounded-l-sm" style={{ background: "#1a2130" }} />
+            <div aria-hidden className="pointer-events-none absolute -right-[3px] top-[110px] h-12 w-[3px] rounded-r-sm" style={{ background: "#1a2130" }} />
+            {/* tela */}
+            <div className="relative overflow-hidden rounded-[34px] bg-black" style={{ aspectRatio: "9 / 16", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.08), inset 0 2px 12px rgba(255,255,255,0.06)" }}>
+              <iframe
+                src="https://player.vimeo.com/video/1241636866"
+                title="Veja o app por dentro"
+                loading="lazy"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                className="block h-full w-full bg-black object-cover"
+              />
+              {/* ilha (dynamic island) */}
+              <div aria-hidden className="pointer-events-none absolute left-1/2 top-[10px] h-[22px] w-[84px] -translate-x-1/2 rounded-full bg-black" />
+            </div>
+          </div>
         </div>
         <div className="mt-8">
           <Cta label="GARANTIR MINHA ROTINA AGORA →" note="🔒 Compra segura • Acesso imediato" />
