@@ -43,32 +43,33 @@ const pains = [
 
 const benefits = [
   ["📅", "Rotina de 7 dias pronta", "Você nunca mais acorda sem saber o que fazer."],
-  ["✅", "3 tarefas por dia", "A casa melhora aos poucos, sem faxina maratona."],
-  ["🗂️", "Planner de 4 semanas", "Você enxerga o mês e para de começar do zero."],
+  ["✅", "3 tarefas por dia", "Zona, fluxo e reset: cerca de 20 minutos por dia. Dia puxado? Faça só o Reset de 5 minutos."],
+  ["🗂️", "Seu mês em 4 semanas", "Veja quanto você concluiu em cada semana e acompanhe sua sequência."],
   ["🧽", "30 truques passo a passo", "Box, fogão, panela e espelho com soluções simples."],
   ["💰", "Vinagre, limão e bicarbonato", "Menos gasto com produto caro."],
-  ["🎯", "Checklists e conquistas", "Você vê o progresso e quer continuar."],
+  ["🎯", "Sequência, progresso e conquistas", "Você marca, vê o progresso e quer continuar."],
 ];
 
 const steps = [
   ["1", "Compre por R$10", "Pagamento rápido e seguro."],
-  ["2", "Abra o app no celular", "Instala na tela inicial em segundos."],
+  ["2", "Abra o app no celular", "Instala na tela inicial em poucos toques."],
   ["3", "Siga o dia", "Faça as 3 tarefas e marque."],
 ];
 
 const objections = [
   ['"Dica de limpeza eu acho de graça na internet."', "Acha, soltas, e perde tempo escolhendo. Aqui você tem a ordem pronta: o que fazer, em que dia, em quanto tempo."],
-  ['"Eu não tenho tempo."', "São 3 tarefas por dia. Nos dias corridos, tem a faxina rápida de 15 minutos."],
-  ['"Eu não sou organizada."', "Perfeito. O app foi feito pra isso: ele organiza por você."],
+  ['"Eu não tenho tempo."', "São cerca de 20 minutos por dia. E nos dias corridos, faça só o Reset de 5 minutos e o seu dia conta."],
+  ['"Eu não sou organizada."', "Perfeito. O app foi feito pra isso: todo dia ele mostra o que fazer, e você só marca."],
 ];
 
 const faqs = [
   ["É mensalidade?", "Não. Pagamento único de R$ 10."],
-  ["Preciso comprar produtos caros?", "Não. Os truques usam vinagre, limão, bicarbonato e itens que você já tem em casa."],
+  ["Preciso comprar produtos caros?", "Não. A maioria dos truques usa vinagre, limão, bicarbonato e itens comuns de casa."],
   ["Funciona no meu celular?", "Funciona em iPhone e Android, direto pelo navegador."],
-  ["Tenho pouco tempo, serve pra mim?", "Serve. São 3 tarefas por dia, e tem a faxina rápida de 15 minutos para os dias corridos."],
+  ["Tenho pouco tempo, serve pra mim?", "Serve. São cerca de 20 minutos por dia, e nos dias corridos você pode fazer só o Reset de 5 minutos."],
   ["E se eu não gostar?", "Você tem 7 dias de garantia e recebe 100% de volta."],
   ["Como recebo o acesso?", "Logo após o pagamento, você recebe o acesso para abrir o app no celular."],
+  ["Meu progresso fica salvo?", "Fica salvo no aparelho e no navegador em que você usa o app."],
 ];
 
 function Index() {
@@ -111,14 +112,32 @@ function Index() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-3xl px-5 py-16 text-center">
+        <h2 className="text-3xl md:text-4xl">Veja o app por dentro</h2>
+        <p className="mt-2 text-lg text-muted-foreground">É assim que você usa todo dia.</p>
+        <div className="mx-auto mt-8 w-full max-w-[360px] overflow-hidden rounded-lg border bg-card shadow-xl" style={{ aspectRatio: "9 / 16" }}>
+          <iframe
+            src="https://player.vimeo.com/video/1241632846"
+            title="Veja o app por dentro"
+            loading="lazy"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            className="h-full w-full"
+          />
+        </div>
+        <div className="mt-8">
+          <Cta label="GARANTIR MINHA ROTINA AGORA →" note="🔒 Compra segura • Acesso imediato" />
+        </div>
+      </section>
+
       <section className="bg-muted py-16">
         <div className="mx-auto max-w-3xl px-5">
           <h2 className="text-3xl md:text-4xl">Veja um dia da sua rotina</h2>
           <p className="mt-4 text-lg text-muted-foreground">Quarta-feira. Três tarefas, nada mais:</p>
           <ul className="mt-6 space-y-4 text-lg">
-            <li>☐ Limpei panela com bicarbonato</li>
-            <li>☐ Organizei 1 prateleira ou armário</li>
-            <li>☐ Borrifei aromatizador em cortinas ou sofá</li>
+            <li>☐ Zona: trocar a roupa de cama</li>
+            <li>☐ Fluxo: lavar toalhas e lençóis</li>
+            <li>☐ Reset de 5 minutos: louça, bancada e lixo</li>
           </ul>
           <p className="mt-6 font-bold text-primary">Sem pensar no que fazer. Só abrir e marcar.</p>
         </div>
@@ -155,7 +174,7 @@ function Index() {
           <h2 className="text-3xl md:text-5xl">Menos que um desinfetante</h2>
           <p className="mt-4 opacity-80">Um desinfetante custa mais que isso. Você leva tudo:</p>
           <ul className="mx-auto mt-6 max-w-md space-y-2 text-left">
-            {["Rotina de 7 dias pronta", "Planner de 4 semanas", "30 truques caseiros passo a passo", "Desafio com progresso marcado", "Acesso no celular, quando quiser"].map((x) => <li key={x}>✔ {x}</li>)}
+            {["Rotina de 7 dias pronta, com 3 tarefas por dia (Zona, Fluxo e Reset)", "Dia puxado: faça só o Reset de 5 minutos", "30 truques caseiros passo a passo", "Sequência, progresso do mês e checklist para marcar", "Acesso no celular, quando quiser", "Troque o dia ou a tarefa quando precisar"].map((x) => <li key={x}>✔ {x}</li>)}
           </ul>
           <p className="mt-8 text-6xl font-extrabold">R$10</p>
           <p className="mb-8 mt-2 opacity-80">pagamento único • sem mensalidade</p>
