@@ -110,30 +110,48 @@ function Index() {
       <section className="mx-auto max-w-3xl px-5 py-16 text-center">
         <h2 className="text-3xl md:text-4xl">Veja o app por dentro</h2>
         <p className="mt-2 text-lg text-muted-foreground">É assim que você usa todo dia.</p>
-        <div className="relative mx-auto mt-8 w-full max-w-[330px]">
-          {/* brilho suave atrás do celular */}
-          <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[120%] w-[140%] -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ background: "radial-gradient(circle, hsl(var(--primary) / 0.18) 0%, transparent 70%)" }} />
-          {/* corpo do celular */}
+        <div className="relative mx-auto mt-10 w-full max-w-[340px] p-4">
+          {/* halo de luz atrás do aparelho */}
+          <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[118%] w-[155%] -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ background: "radial-gradient(closest-side, hsl(var(--primary) / 0.22), transparent)" }} />
+
+          {/* corpo: borda fina de titânio escovado */}
           <div
-            className="relative rounded-[44px] p-[10px] shadow-[0_24px_48px_-12px_rgba(15,30,70,0.35)] ring-1 ring-white/10"
-            style={{ background: "linear-gradient(145deg, #2a2f3a 0%, #0d1526 100%)" }}
+            className="relative rounded-[50px]"
+            style={{
+              padding: "5px",
+              background: "repeating-linear-gradient(148deg, rgba(255,255,255,0.07) 0 2px, rgba(0,0,0,0.07) 2px 4px), linear-gradient(148deg, #ffffff 0%, #e3eaf3 8%, #93a1b6 22%, #3d4a60 40%, #151d29 54%, #425066 68%, #aebbd0 84%, #f8fbff 100%)",
+              boxShadow: "0 38px 70px -28px rgba(9,20,45,0.58), 0 14px 26px -14px rgba(9,20,45,0.48), inset 0 1px 1px rgba(255,255,255,0.60), inset 0 -1px 1px rgba(255,255,255,0.40)",
+            }}
           >
-            {/* botões laterais: volume (esquerda) e liga/desliga (direita) */}
-            <div aria-hidden className="pointer-events-none absolute -left-[3px] top-[90px] h-8 w-[3px] rounded-l-sm" style={{ background: "#1a2130" }} />
-            <div aria-hidden className="pointer-events-none absolute -left-[3px] top-[130px] h-8 w-[3px] rounded-l-sm" style={{ background: "#1a2130" }} />
-            <div aria-hidden className="pointer-events-none absolute -right-[3px] top-[110px] h-12 w-[3px] rounded-r-sm" style={{ background: "#1a2130" }} />
-            {/* tela */}
-            <div className="relative overflow-hidden rounded-[34px] bg-black" style={{ aspectRatio: "9 / 16", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.08), inset 0 2px 12px rgba(255,255,255,0.06)" }}>
-              <iframe
-                src="https://player.vimeo.com/video/1241636866"
-                title="Veja o app por dentro"
-                loading="lazy"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                className="block h-full w-full bg-black object-cover"
-              />
-              {/* ilha (dynamic island) */}
-              <div aria-hidden className="pointer-events-none absolute left-1/2 top-[10px] h-[22px] w-[84px] -translate-x-1/2 rounded-full bg-black" />
+            {/* sombra de contato sob o aparelho */}
+            <div aria-hidden className="pointer-events-none absolute -bottom-4 left-1/2 h-7 w-[88%] -translate-x-1/2 rounded-[50%] blur-lg" style={{ background: "rgba(9,20,45,0.55)" }} />
+            {/* botão de ação + volume (esquerda) */}
+            <div aria-hidden className="pointer-events-none absolute -left-[4px] top-[78px] h-6 w-[6px] rounded-l-[3px]" style={{ background: "linear-gradient(to right, #f2f6fb 0%, #c2cedd 20%, #6b7889 58%, #222b38 100%)", boxShadow: "-1px 2px 4px rgba(9,20,45,0.28)" }} />
+            <div aria-hidden className="pointer-events-none absolute -left-[4px] top-[120px] h-11 w-[6px] rounded-l-[3px]" style={{ background: "linear-gradient(to right, #f2f6fb 0%, #c2cedd 20%, #6b7889 58%, #222b38 100%)", boxShadow: "-1px 2px 4px rgba(9,20,45,0.28)" }} />
+            <div aria-hidden className="pointer-events-none absolute -left-[4px] top-[176px] h-11 w-[6px] rounded-l-[3px]" style={{ background: "linear-gradient(to right, #f2f6fb 0%, #c2cedd 20%, #6b7889 58%, #222b38 100%)", boxShadow: "-1px 2px 4px rgba(9,20,45,0.28)" }} />
+            {/* liga/desliga (direita) */}
+            <div aria-hidden className="pointer-events-none absolute -right-[4px] top-[142px] h-14 w-[6px] rounded-r-[3px]" style={{ background: "linear-gradient(to left, #f2f6fb 0%, #c2cedd 20%, #6b7889 58%, #222b38 100%)", boxShadow: "1px 2px 4px rgba(9,20,45,0.28)" }} />
+
+            {/* chanfro interno + aro preto fino do visor */}
+            <div className="rounded-[45px] bg-black" style={{ padding: "5px", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.28), inset 0 2px 8px rgba(0,0,0,0.95)" }}>
+              {/* tela */}
+              <div className="relative overflow-hidden rounded-[40px] bg-black" style={{ aspectRatio: "9 / 16" }}>
+                <iframe
+                  src="https://player.vimeo.com/video/1242239226"
+                  title="Veja o app por dentro"
+                  loading="lazy"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  className="block h-full w-full bg-black"
+                />
+                {/* ilha dinâmica com lente */}
+                <div aria-hidden className="pointer-events-none absolute left-1/2 top-[10px] flex h-[24px] w-[86px] -translate-x-1/2 items-center justify-end gap-[6px] rounded-full bg-black pr-[9px]" style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.07)" }}>
+                  <span className="h-[9px] w-[9px] rounded-full" style={{ background: "radial-gradient(circle at 32% 30%, #4b6a9a 0%, #101826 62%, #05080f 100%)", boxShadow: "0 0 0 1px rgba(255,255,255,0.12)" }} />
+                </div>
+                {/* reflexo do vidro: brilho no canto + faixa diagonal */}
+                <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(115% 52% at 6% 2%, rgba(255,255,255,0.18) 0%, transparent 55%)" }} />
+                <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(112deg, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 12%, transparent 26%, transparent 74%, rgba(255,255,255,0.12) 92%, rgba(255,255,255,0.24) 100%)" }} />
+              </div>
             </div>
           </div>
         </div>
