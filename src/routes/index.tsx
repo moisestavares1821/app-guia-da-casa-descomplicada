@@ -33,12 +33,9 @@ function Cta({ label, note }: { label: string; note: string }) {
 }
 
 const pains = [
-  "Limpa o fim de semana todo e na terça já bagunçou",
   "Olha pra casa e não sabe por onde começar",
-  "Começa planner e larga no terceiro dia",
   "Gasta caro em produto que não resolve",
   "Dorme cansada sem a sensação de ter dado conta",
-  "Sente vergonha quando chega visita de surpresa",
 ];
 
 const benefits = [
@@ -46,7 +43,6 @@ const benefits = [
   ["✅", "3 tarefas por dia", "Zona, fluxo e reset: cerca de 20 minutos por dia. Dia puxado? Faça só o Reset de 5 minutos."],
   ["🗂️", "Seu mês em 4 semanas", "Veja quanto você concluiu em cada semana e acompanhe sua sequência."],
   ["🧽", "30 truques passo a passo", "Box, fogão, panela e espelho com soluções simples."],
-  ["💰", "Vinagre, limão e bicarbonato", "Menos gasto com produto caro."],
   ["🎯", "Sequência, progresso e conquistas", "Você marca, vê o progresso e quer continuar."],
 ];
 
@@ -104,7 +100,6 @@ function Index() {
         <p className="text-center font-bold text-primary">Apresentando</p>
         <h2 className="mt-2 text-center text-4xl md:text-5xl">Guia da Casa Descomplicada</h2>
         <div className="mx-auto mt-4 max-w-2xl space-y-4 text-center text-lg text-muted-foreground">
-          <p>Sua casa não vive bagunçada por falta de esforço. Vive bagunçada por falta de sistema.</p>
           <p>O app tira a decisão da sua cabeça: cada dia da semana já tem suas 3 tarefas. Você abre, faz e marca.</p>
         </div>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -144,25 +139,6 @@ function Index() {
         </div>
         <div className="mt-8">
           <Cta label="GARANTIR MINHA ROTINA AGORA →" note="🔒 Compra segura • Acesso imediato" />
-        </div>
-      </section>
-
-      <section className="bg-secondary py-16">
-        <div className="mx-auto grid max-w-5xl items-center gap-10 px-5 md:grid-cols-2">
-          <div>
-            <h2 className="text-3xl md:text-4xl">Veja um truque de dentro do app</h2>
-            <p className="mt-4 text-secondary-foreground">Lê em 30 segundos, aplica na hora. Sem enrolação.</p>
-          </div>
-          <div className="rounded-2xl bg-card p-6 shadow-xl">
-            <p className="text-sm font-bold text-primary">02 • Limpeza Eficiente</p>
-            <h3 className="mt-1 text-2xl">Panela queimada sem esfregar</h3>
-            <p className="mt-4 text-sm font-bold">Você vai precisar</p>
-            <div className="mt-2 flex flex-wrap gap-2">
-              {["Bicarbonato", "Vinagre", "Água"].map((x) => <span key={x} className="rounded-full bg-accent px-3 py-1 text-sm">{x}</span>)}
-            </div>
-            <p className="mt-4 text-sm font-bold">Como fazer</p>
-            <p className="mt-1 text-muted-foreground">Cubra o fundo com bicarbonato, adicione vinagre e aqueça por 5 min. Depois de esfriar, a crosta solta fácil.</p>
-          </div>
         </div>
       </section>
 
