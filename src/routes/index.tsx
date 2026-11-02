@@ -80,8 +80,8 @@ function Index() {
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 md:grid-cols-2 md:py-20">
         <div className="space-y-6">
           <span className="inline-block rounded-full bg-secondary px-4 py-1 text-sm font-bold text-secondary-foreground">Para quem não sabe por onde começar na casa</span>
-          <h1 className="text-4xl leading-tight md:text-6xl">Sua casa em ordem. 3 tarefas por dia.</h1>
-          <p className="text-lg text-muted-foreground">A rotina da semana já vem pronta no seu celular. Abra o app, faça as 3 tarefas do dia e marque. Com 30 truques caseiros para limpar e perfumar gastando menos.</p>
+          <h1 className="text-4xl leading-tight md:text-6xl">Sua casa em ordem. Apenas 3 tarefas por dia!</h1>
+          <p className="text-lg text-muted-foreground">A rotina da semana já vem pronta no seu celular. Abra o app, faça as 3 tarefas do dia e marque.</p>
         </div>
         <img src={hero} alt="Antes e depois da casa com a rotina leve" width={1200} height={1200} className="w-full rounded-2xl shadow-2xl" />
       </section>
