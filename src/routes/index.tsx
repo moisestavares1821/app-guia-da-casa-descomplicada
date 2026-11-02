@@ -155,7 +155,7 @@ function Index() {
           <h2 className="text-3xl md:text-5xl">Menos que um desinfetante</h2>
           <p className="mt-4 opacity-80">Um desinfetante custa mais que isso. Você leva tudo:</p>
           <ul className="mx-auto mt-6 max-w-md space-y-2 text-left">
-            {["Rotina de 7 dias pronta, com 3 tarefas por dia (Zona, Fluxo e Reset)", "Dia puxado: faça só o Reset de 5 minutos", "30 truques caseiros passo a passo", "Sequência, progresso do mês e checklist para marcar", "Acesso no celular, quando quiser", "Troque o dia ou a tarefa quando precisar"].map((x) => <li key={x}>✔ {x}</li>)}
+            {["Rotina de 7 dias pronta, com 3 tarefas por dia (Zona, Fluxo e Reset)", "Dia puxado: faça só o Reset de 5 minutos", "30 truques caseiros passo a passo", "Sequência, progresso da semana, mês e checklist para marcar", "Acesso no celular, quando quiser", "Troque o dia ou a tarefa quando precisar"].map((x) => <li key={x}>✔ {x}</li>)}
           </ul>
           <p className="mt-8 text-6xl font-extrabold">R$10</p>
           <p className="mb-8 mt-2 opacity-80">pagamento único • sem mensalidade</p>
