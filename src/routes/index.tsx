@@ -33,9 +33,12 @@ function Cta({ label, note }: { label: string; note: string }) {
 }
 
 const pains = [
+  "Limpa o fim de semana todo e na terça já bagunçou",
   "Olha pra casa e não sabe por onde começar",
+  "Começa planner e larga no terceiro dia",
   "Gasta caro em produto que não resolve",
   "Dorme cansada sem a sensação de ter dado conta",
+  "Sente vergonha quando chega visita de surpresa",
 ];
 
 const benefits = [
@@ -43,6 +46,7 @@ const benefits = [
   ["✅", "3 tarefas por dia", "Zona, fluxo e reset: cerca de 20 minutos por dia. Dia puxado? Faça só o Reset de 5 minutos."],
   ["🗂️", "Seu mês em 4 semanas", "Veja quanto você concluiu em cada semana e acompanhe sua sequência."],
   ["🧽", "30 truques passo a passo", "Box, fogão, panela e espelho com soluções simples."],
+  ["💰", "Vinagre, limão e bicarbonato", "Menos gasto com produto caro."],
   ["🎯", "Sequência, progresso e conquistas", "Você marca, vê o progresso e quer continuar."],
 ];
 
@@ -62,9 +66,9 @@ const faqs = [
   ["É mensalidade?", "Não. Pagamento único de R$ 10."],
   ["Preciso comprar produtos caros?", "Não. A maioria dos truques usa vinagre, limão, bicarbonato e itens comuns de casa."],
   ["Funciona no meu celular?", "Funciona em iPhone e Android, direto pelo navegador."],
-  ["Tenho pouco tempo, serve pra mim?", "Serve. São a partir de 20 minutos por dia, e nos dias corridos você pode fazer só o Reset de poucos minutos."],
+  ["Tenho pouco tempo, serve pra mim?", "Serve. São cerca de 20 minutos por dia, e nos dias corridos você pode fazer só o Reset de 5 minutos."],
   ["E se eu não gostar?", "Você tem 7 dias de garantia e recebe 100% de volta."],
-  ["Como recebo o acesso?", "Logo após o pagamento, você recebe o acesso no seu e-mail com um link de acesso para abrir o app no celular."],
+  ["Como recebo o acesso?", "Logo após o pagamento, você recebe o acesso para abrir o app no celular."],
   ["Meu progresso fica salvo?", "Fica salvo no aparelho e no navegador em que você usa o app."],
 ];
 
@@ -74,14 +78,14 @@ function Index() {
   return (
     <main className="overflow-x-hidden">
       <div className="bg-ink px-5 py-3 text-center text-sm font-semibold text-ink-foreground">
-        🔥 Oferta de lançamento:{'\n'}R$10,00 por tempo limitado. Depois R$37,00
+        🔥 Oferta de lançamento: R$10,00 até meia noite. Depois, R$37,00
       </div>
 
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 md:grid-cols-2 md:py-20">
         <div className="space-y-6">
           <span className="inline-block rounded-full bg-secondary px-4 py-1 text-sm font-bold text-secondary-foreground">Para quem não sabe por onde começar na casa</span>
-          <h1 className="text-4xl leading-tight md:text-6xl">Sua casa em ordem. Apenas 3 tarefas por dia!</h1>
-          <p className="text-lg text-muted-foreground">A rotina da semana já vem pronta no seu celular. Abra o app, faça as 3 tarefas do dia e marque.</p>
+          <h1 className="text-4xl leading-tight md:text-6xl">Sua casa em ordem. 3 tarefas por dia.</h1>
+          <p className="text-lg text-muted-foreground">A rotina da semana já vem pronta no seu celular. Abra o app, faça as 3 tarefas do dia e marque. Com 30 truques caseiros para limpar e perfumar gastando menos.</p>
         </div>
         <img src={hero} alt="Antes e depois da casa com a rotina leve" width={1200} height={1200} className="w-full rounded-2xl shadow-2xl" />
       </section>
@@ -100,6 +104,7 @@ function Index() {
         <p className="text-center font-bold text-primary">Apresentando</p>
         <h2 className="mt-2 text-center text-4xl md:text-5xl">Guia da Casa Descomplicada</h2>
         <div className="mx-auto mt-4 max-w-2xl space-y-4 text-center text-lg text-muted-foreground">
+          <p>Sua casa não vive bagunçada por falta de esforço. Vive bagunçada por falta de sistema.</p>
           <p>O app tira a decisão da sua cabeça: cada dia da semana já tem suas 3 tarefas. Você abre, faz e marca.</p>
         </div>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -110,53 +115,50 @@ function Index() {
       <section className="mx-auto max-w-3xl px-5 py-16 text-center">
         <h2 className="text-3xl md:text-4xl">Veja o app por dentro</h2>
         <p className="mt-2 text-lg text-muted-foreground">É assim que você usa todo dia.</p>
-        <div className="relative mx-auto mt-10 w-full max-w-[340px] p-4">
-          {/* halo de luz atrás do aparelho */}
-          <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[118%] w-[155%] -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ background: "radial-gradient(closest-side, hsl(var(--primary) / 0.22), transparent)" }} />
-
-          {/* corpo: borda fina de titânio escovado */}
-          <div
-            className="relative rounded-[50px]"
-            style={{
-              padding: "5px",
-              background: "repeating-linear-gradient(148deg, rgba(255,255,255,0.07) 0 2px, rgba(0,0,0,0.07) 2px 4px), linear-gradient(148deg, #ffffff 0%, #e3eaf3 8%, #93a1b6 22%, #3d4a60 40%, #151d29 54%, #425066 68%, #aebbd0 84%, #f8fbff 100%)",
-              boxShadow: "0 38px 70px -28px rgba(9,20,45,0.58), 0 14px 26px -14px rgba(9,20,45,0.48), inset 0 1px 1px rgba(255,255,255,0.60), inset 0 -1px 1px rgba(255,255,255,0.40)",
-            }}
-          >
-            {/* sombra de contato sob o aparelho */}
-            <div aria-hidden className="pointer-events-none absolute -bottom-4 left-1/2 h-7 w-[88%] -translate-x-1/2 rounded-[50%] blur-lg" style={{ background: "rgba(9,20,45,0.55)" }} />
-            {/* botão de ação + volume (esquerda) */}
-            <div aria-hidden className="pointer-events-none absolute -left-[4px] top-[78px] h-6 w-[6px] rounded-l-[3px]" style={{ background: "linear-gradient(to right, #f2f6fb 0%, #c2cedd 20%, #6b7889 58%, #222b38 100%)", boxShadow: "-1px 2px 4px rgba(9,20,45,0.28)" }} />
-            <div aria-hidden className="pointer-events-none absolute -left-[4px] top-[120px] h-11 w-[6px] rounded-l-[3px]" style={{ background: "linear-gradient(to right, #f2f6fb 0%, #c2cedd 20%, #6b7889 58%, #222b38 100%)", boxShadow: "-1px 2px 4px rgba(9,20,45,0.28)" }} />
-            <div aria-hidden className="pointer-events-none absolute -left-[4px] top-[176px] h-11 w-[6px] rounded-l-[3px]" style={{ background: "linear-gradient(to right, #f2f6fb 0%, #c2cedd 20%, #6b7889 58%, #222b38 100%)", boxShadow: "-1px 2px 4px rgba(9,20,45,0.28)" }} />
-            {/* liga/desliga (direita) */}
-            <div aria-hidden className="pointer-events-none absolute -right-[4px] top-[142px] h-14 w-[6px] rounded-r-[3px]" style={{ background: "linear-gradient(to left, #f2f6fb 0%, #c2cedd 20%, #6b7889 58%, #222b38 100%)", boxShadow: "1px 2px 4px rgba(9,20,45,0.28)" }} />
-
-            {/* chanfro interno + aro preto fino do visor */}
-            <div className="rounded-[45px] bg-black" style={{ padding: "5px", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.28), inset 0 2px 8px rgba(0,0,0,0.95)" }}>
-              {/* tela */}
-              <div className="relative overflow-hidden rounded-[40px] bg-black" style={{ aspectRatio: "9 / 16" }}>
-                <iframe
-                  src="https://player.vimeo.com/video/1242243638"
-                  title="Veja o app por dentro"
-                  loading="lazy"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
-                  className="block h-full w-full bg-black"
-                />
-                {/* ilha dinâmica com lente */}
-                <div aria-hidden className="pointer-events-none absolute left-1/2 top-[10px] flex h-[24px] w-[86px] -translate-x-1/2 items-center justify-end gap-[6px] rounded-full bg-black pr-[9px]" style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.07)" }}>
-                  <span className="h-[9px] w-[9px] rounded-full" style={{ background: "radial-gradient(circle at 32% 30%, #4b6a9a 0%, #101826 62%, #05080f 100%)", boxShadow: "0 0 0 1px rgba(255,255,255,0.12)" }} />
-                </div>
-                {/* reflexo do vidro: brilho no canto + faixa diagonal */}
-                <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(115% 52% at 6% 2%, rgba(255,255,255,0.18) 0%, transparent 55%)" }} />
-                <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(112deg, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 12%, transparent 26%, transparent 74%, rgba(255,255,255,0.12) 92%, rgba(255,255,255,0.24) 100%)" }} />
-              </div>
-            </div>
-          </div>
+        <div className="mx-auto mt-8 w-full max-w-[360px] overflow-hidden rounded-lg border bg-card shadow-xl" style={{ aspectRatio: "9 / 16" }}>
+          <iframe
+            src="https://player.vimeo.com/video/1241632846"
+            title="Veja o app por dentro"
+            loading="lazy"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            className="h-full w-full"
+          />
         </div>
         <div className="mt-8">
           <Cta label="GARANTIR MINHA ROTINA AGORA →" note="🔒 Compra segura • Acesso imediato" />
+        </div>
+      </section>
+
+      <section className="bg-muted py-16">
+        <div className="mx-auto max-w-3xl px-5">
+          <h2 className="text-3xl md:text-4xl">Veja um dia da sua rotina</h2>
+          <p className="mt-4 text-lg text-muted-foreground">Quarta-feira. Três tarefas, nada mais:</p>
+          <ul className="mt-6 space-y-4 text-lg">
+            <li>☐ Zona: trocar a roupa de cama</li>
+            <li>☐ Fluxo: lavar toalhas e lençóis</li>
+            <li>☐ Reset de 5 minutos: louça, bancada e lixo</li>
+          </ul>
+          <p className="mt-6 font-bold text-primary">Sem pensar no que fazer. Só abrir e marcar.</p>
+        </div>
+      </section>
+
+      <section className="bg-secondary py-16">
+        <div className="mx-auto grid max-w-5xl items-center gap-10 px-5 md:grid-cols-2">
+          <div>
+            <h2 className="text-3xl md:text-4xl">Veja um truque de dentro do app</h2>
+            <p className="mt-4 text-secondary-foreground">Lê em 30 segundos, aplica na hora. Sem enrolação.</p>
+          </div>
+          <div className="rounded-2xl bg-card p-6 shadow-xl">
+            <p className="text-sm font-bold text-primary">02 • Limpeza Eficiente</p>
+            <h3 className="mt-1 text-2xl">Panela queimada sem esfregar</h3>
+            <p className="mt-4 text-sm font-bold">Você vai precisar</p>
+            <div className="mt-2 flex flex-wrap gap-2">
+              {["Bicarbonato", "Vinagre", "Água"].map((x) => <span key={x} className="rounded-full bg-accent px-3 py-1 text-sm">{x}</span>)}
+            </div>
+            <p className="mt-4 text-sm font-bold">Como fazer</p>
+            <p className="mt-1 text-muted-foreground">Cubra o fundo com bicarbonato, adicione vinagre e aqueça por 5 min. Depois de esfriar, a crosta solta fácil.</p>
+          </div>
         </div>
       </section>
 
@@ -172,11 +174,11 @@ function Index() {
           <h2 className="text-3xl md:text-5xl">Menos que um desinfetante</h2>
           <p className="mt-4 opacity-80">Um desinfetante custa mais que isso. Você leva tudo:</p>
           <ul className="mx-auto mt-6 max-w-md space-y-2 text-left">
-            {["Rotina de 7 dias pronta, com 3 tarefas por dia (Zona, Fluxo e Reset)", "Progresso da Semana", "Progresso do Mês", "30 truques caseiros passo a passo", "Acesso no celular, quando quiser", "Troque o dia ou a tarefa quando precisar"].map((x) => <li key={x}>✔ {x}</li>)}
+            {["Rotina de 7 dias pronta, com 3 tarefas por dia (Zona, Fluxo e Reset)", "Dia puxado: faça só o Reset de 5 minutos", "30 truques caseiros passo a passo", "Sequência, progresso do mês e checklist para marcar", "Acesso no celular, quando quiser", "Troque o dia ou a tarefa quando precisar"].map((x) => <li key={x}>✔ {x}</li>)}
           </ul>
           <p className="mt-8 text-6xl font-extrabold">R$10</p>
           <p className="mb-8 mt-2 opacity-80">pagamento único • sem mensalidade</p>
-          <Cta label="GARANTIR MINHA ROTINA AGORA " note="🔒 Compra segura • Acesso imediato" />
+          <Cta label="GARANTIR MINHA ROTINA AGORA →" note="🔒 Compra segura • Acesso imediato" />
         </div>
       </section>
 
@@ -198,7 +200,7 @@ function Index() {
         <div className="mx-auto max-w-3xl px-5 text-center">
           <h2 className="text-3xl md:text-4xl">Mais uma semana igual a essa, ou uma semana com rotina?</h2>
           <p className="mb-8 mt-4 text-lg text-muted-foreground">Por R$ 10, você decide.</p>
-          <Cta label="SIM, QUERO MINHA ROTINA POR R$10 " note="Acesso imediato • Pagamento único • Garantia de 7 dias" />
+          <Cta label="SIM, QUERO MINHA ROTINA POR R$10 →" note="Acesso imediato • Pagamento único • Garantia de 7 dias" />
         </div>
       </section>
 
