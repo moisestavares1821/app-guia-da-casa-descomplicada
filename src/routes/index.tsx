@@ -62,9 +62,9 @@ const faqs = [
   ["É mensalidade?", "Não. Pagamento único de R$ 10."],
   ["Preciso comprar produtos caros?", "Não. A maioria dos truques usa vinagre, limão, bicarbonato e itens comuns de casa."],
   ["Funciona no meu celular?", "Funciona em iPhone e Android, direto pelo navegador."],
-  ["Tenho pouco tempo, serve pra mim?", "Serve. São cerca de 20 minutos por dia, e nos dias corridos você pode fazer só o Reset de 5 minutos."],
+  ["Tenho pouco tempo, serve pra mim?", "Serve. São a partir de 20 minutos por dia, e nos dias corridos você pode fazer só o Reset de poucos minutos."],
   ["E se eu não gostar?", "Você tem 7 dias de garantia e recebe 100% de volta."],
-  ["Como recebo o acesso?", "Logo após o pagamento, você recebe o acesso para abrir o app no celular."],
+  ["Como recebo o acesso?", "Logo após o pagamento, você recebe o acesso no seu e-mail com um link de acesso para abrir o app no celular."],
   ["Meu progresso fica salvo?", "Fica salvo no aparelho e no navegador em que você usa o app."],
 ];
 
@@ -172,11 +172,11 @@ function Index() {
           <h2 className="text-3xl md:text-5xl">Menos que um desinfetante</h2>
           <p className="mt-4 opacity-80">Um desinfetante custa mais que isso. Você leva tudo:</p>
           <ul className="mx-auto mt-6 max-w-md space-y-2 text-left">
-            {["Rotina de 7 dias pronta, com 3 tarefas por dia (Zona, Fluxo e Reset)", "Dia puxado: faça só o Reset de 5 minutos", "30 truques caseiros passo a passo", "Sequência, progresso do mês e checklist para marcar", "Acesso no celular, quando quiser", "Troque o dia ou a tarefa quando precisar"].map((x) => <li key={x}>✔ {x}</li>)}
+            {["Rotina de 7 dias pronta, com 3 tarefas por dia (Zona, Fluxo e Reset)", "Progresso da Semana", "Progresso do Mês", "30 truques caseiros passo a passo", "Acesso no celular, quando quiser", "Troque o dia ou a tarefa quando precisar"].map((x) => <li key={x}>✔ {x}</li>)}
           </ul>
           <p className="mt-8 text-6xl font-extrabold">R$10</p>
           <p className="mb-8 mt-2 opacity-80">pagamento único • sem mensalidade</p>
-          <Cta label="GARANTIR MINHA ROTINA AGORA →" note="🔒 Compra segura • Acesso imediato" />
+          <Cta label="GARANTIR MINHA ROTINA AGORA " note="🔒 Compra segura • Acesso imediato" />
         </div>
       </section>
 
@@ -198,7 +198,7 @@ function Index() {
         <div className="mx-auto max-w-3xl px-5 text-center">
           <h2 className="text-3xl md:text-4xl">Mais uma semana igual a essa, ou uma semana com rotina?</h2>
           <p className="mb-8 mt-4 text-lg text-muted-foreground">Por R$ 10, você decide.</p>
-          <Cta label="SIM, QUERO MINHA ROTINA POR R$10 →" note="Acesso imediato • Pagamento único • Garantia de 7 dias" />
+          <Cta label="SIM, QUERO MINHA ROTINA POR R$10 " note="Acesso imediato • Pagamento único • Garantia de 7 dias" />
         </div>
       </section>
 
