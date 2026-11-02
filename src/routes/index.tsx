@@ -74,7 +74,7 @@ function Index() {
   return (
     <main className="overflow-x-hidden">
       <div className="bg-ink px-5 py-3 text-center text-sm font-semibold text-ink-foreground">
-        🔥 Oferta de lançamento: R$10,00 até meia noite. Depois, R$37,00
+        🔥 Oferta de lançamento:{'\n'}R$10,00 por tempo limitado. Depois R$37,00
       </div>
 
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 md:grid-cols-2 md:py-20">
