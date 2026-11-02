@@ -7,6 +7,12 @@ import { initMetaPixel, trackInitiateCheckout } from "@/lib/meta-pixel";
 
 const CHECKOUT = "https://pay.wiapy.com/Fi5MWoXDTg";
 
+const CLARITY_SNIPPET = `(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "z7fk4a799i");`;
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -17,6 +23,7 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    scripts: [{ type: "text/javascript", children: CLARITY_SNIPPET }],
   }),
   component: Index,
 });
