@@ -35,8 +35,6 @@ function Cta({ label, note }: { label: string; note: string }) {
 const pains = [
   "Limpa o fim de semana todo e na terça já bagunçou",
   "Olha pra casa e não sabe por onde começar",
-  "Começa planner e larga no terceiro dia",
-  "Gasta caro em produto que não resolve",
   "Dorme cansada sem a sensação de ter dado conta",
   "Sente vergonha quando chega visita de surpresa",
 ];
@@ -112,23 +110,6 @@ function Index() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-5 py-16 text-center">
-        <h2 className="text-3xl md:text-4xl">Veja o app por dentro</h2>
-        <p className="mt-2 text-lg text-muted-foreground">É assim que você usa todo dia.</p>
-        <div className="mx-auto mt-8 w-full max-w-[360px] overflow-hidden rounded-lg border bg-card shadow-xl" style={{ aspectRatio: "9 / 16" }}>
-          <iframe
-            src="https://player.vimeo.com/video/1241632846"
-            title="Veja o app por dentro"
-            loading="lazy"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-            className="h-full w-full"
-          />
-        </div>
-        <div className="mt-8">
-          <Cta label="GARANTIR MINHA ROTINA AGORA →" note="🔒 Compra segura • Acesso imediato" />
-        </div>
-      </section>
 
       <section className="bg-muted py-16">
         <div className="mx-auto max-w-3xl px-5">
