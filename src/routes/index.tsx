@@ -137,7 +137,7 @@ function Index() {
               {/* tela */}
               <div className="relative overflow-hidden rounded-[40px] bg-black" style={{ aspectRatio: "9 / 16" }}>
                 <iframe
-                  src="https://player.vimeo.com/video/1242239226"
+                  src="https://player.vimeo.com/video/1242243638"
                   title="Veja o app por dentro"
                   loading="lazy"
                   allow="autoplay; fullscreen; picture-in-picture"
