@@ -133,13 +133,6 @@ function Index() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-5 py-16">
-        <h2 className="text-center text-3xl md:text-4xl">Antes de decidir</h2>
-        <div className="mt-8 space-y-8">
-          {objections.map(([q, a]) => <div key={q}><h3 className="text-2xl">{q}</h3><p className="mt-3 text-lg text-muted-foreground">{a}</p></div>)}
-        </div>
-      </section>
-
       <section className="bg-secondary py-16">
         <div className="mx-auto max-w-3xl px-5 text-center">
           <h2 className="text-3xl md:text-4xl">Garantia incondicional de 7 dias</h2>
@@ -147,13 +140,6 @@ function Index() {
         </div>
       </section>
 
-      <section className="bg-muted py-16">
-        <div className="mx-auto max-w-3xl px-5 text-center">
-          <h2 className="text-3xl md:text-4xl">Mais uma semana igual a essa, ou uma semana com rotina?</h2>
-          <p className="mb-8 mt-4 text-lg text-muted-foreground">Por R$ 10, você decide.</p>
-          <Cta label="SIM, QUERO MINHA ROTINA POR R$10 →" note="Acesso imediato • Pagamento único • Garantia de 7 dias" />
-        </div>
-      </section>
 
       <section className="mx-auto max-w-3xl px-5 py-16">
         <dl className="divide-y border-y">
