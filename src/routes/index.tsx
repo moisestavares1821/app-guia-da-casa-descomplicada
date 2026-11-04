@@ -44,10 +44,10 @@ function Cta({ label, note }: { label: string; note: string }) {
 }
 
 const pains = [
-  "Limpa o fim de semana todo e na terça já bagunçou",
-  "Olha pra casa e não sabe por onde começar",
-  "Dorme cansada sem a sensação de ter dado conta",
-  "Sente vergonha quando chega visita de surpresa",
+  "“Nunca sei por onde começar.” Olha para a casa toda e trava, sem saber qual tarefa fazer primeiro.",
+  "“Começo animada e largo.” Monta uma lista ou um caderno, mas em poucos dias a rotina some.",
+  "“Faço tudo de uma vez e fico exausta.” Deixa acumular e acaba com uma faxina pesada que consome o fim de semana.",
+  "“Já esqueci o que eu tinha feito.” Sem registro, não lembra o que já foi feito, nem vê o progresso.",
 ];
 
 const telas = [tela1.url, tela2.url, tela3.url, tela4.url];
@@ -98,7 +98,7 @@ function Index() {
           <ul className="mt-8 space-y-3">
             {pains.map((p) => <li key={p} className="flex gap-3 rounded-lg bg-card p-4 shadow-sm"><span className="text-destructive">✕</span><span>{p}</span></li>)}
           </ul>
-          <p className="mt-8 text-center text-lg font-bold text-primary">A culpa não é sua. Faltava uma rotina pronta.</p>
+          <p className="mt-8 text-center text-lg font-bold text-primary">Se sim, esse aplicativo é pra você.</p>
         </div>
       </section>
 
