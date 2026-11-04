@@ -1,11 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
-import heroAsset from "@/assets/antes-depois.webp.asset.json";
-const hero = heroAsset.url;
-import tela1 from "@/assets/app-tela-1.webp.asset.json";
-import tela2 from "@/assets/app-tela-2.webp.asset.json";
-import tela3 from "@/assets/app-tela-3.webp.asset.json";
-import tela4 from "@/assets/app-tela-4.webp.asset.json";
+import hero from "@/assets/antes-depois.webp";
+import tela1 from "@/assets/app-tela-1.webp";
+import tela2 from "@/assets/app-tela-2.webp";
+import tela3 from "@/assets/app-tela-3.webp";
+import tela4 from "@/assets/app-tela-4.webp";
 import { Button } from "@/components/ui/button";
 import { initMetaPixel, trackInitiateCheckout } from "@/lib/meta-pixel";
 
@@ -50,7 +49,7 @@ const pains = [
   "“Já esqueci o que eu tinha feito.” Sem registro, não lembra o que já foi feito, nem vê o progresso.",
 ];
 
-const telas = [tela1.url, tela2.url, tela3.url, tela4.url];
+const telas = [tela1, tela2, tela3, tela4];
 
 const steps = [
   ["1", "Compre por R$10", "Pagamento rápido e seguro."],
