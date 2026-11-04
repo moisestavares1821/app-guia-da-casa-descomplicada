@@ -129,7 +129,7 @@ function Index() {
           </ul>
           <p className="mt-8 text-6xl font-extrabold">R$10</p>
           <p className="mb-8 mt-2 opacity-80">pagamento único • sem mensalidade</p>
-          <Cta label="GARANTIR MINHA ROTINA AGORA →" note="🔒 Compra segura • Acesso imediato" />
+          <Cta label="LIBERAR MEU ACESSO POR R$10 →" note="🔒 Compra segura • Acesso imediato" />
         </div>
       </section>
 
