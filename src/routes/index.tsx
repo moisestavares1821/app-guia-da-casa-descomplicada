@@ -2,6 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import heroAsset from "@/assets/antes-depois.webp.asset.json";
 const hero = heroAsset.url;
+import tela1 from "@/assets/app-tela-1.webp.asset.json";
+import tela2 from "@/assets/app-tela-2.webp.asset.json";
+import tela3 from "@/assets/app-tela-3.webp.asset.json";
+import tela4 from "@/assets/app-tela-4.webp.asset.json";
 import { Button } from "@/components/ui/button";
 import { initMetaPixel, trackInitiateCheckout } from "@/lib/meta-pixel";
 
@@ -46,14 +50,7 @@ const pains = [
   "Sente vergonha quando chega visita de surpresa",
 ];
 
-const benefits = [
-  ["📅", "Rotina de 7 dias pronta", "Você nunca mais acorda sem saber o que fazer."],
-  ["✅", "3 tarefas por dia", "Zona, fluxo e reset: cerca de 20 minutos por dia. Dia puxado? Faça só o Reset de 5 minutos."],
-  ["🗂️", "Seu mês em 4 semanas", "Veja quanto você concluiu em cada semana e acompanhe sua sequência."],
-  ["🧽", "30 truques passo a passo", "Box, fogão, panela e espelho com soluções simples."],
-  ["💰", "Vinagre, limão e bicarbonato", "Menos gasto com produto caro."],
-  ["🎯", "Sequência, progresso e conquistas", "Você marca, vê o progresso e quer continuar."],
-];
+const telas = [tela1.url, tela2.url, tela3.url, tela4.url];
 
 const steps = [
   ["1", "Compre por R$10", "Pagamento rápido e seguro."],
@@ -105,15 +102,13 @@ function Index() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-16">
-        <p className="text-center font-bold text-primary">Apresentando</p>
-        <h2 className="mt-2 text-center text-4xl md:text-5xl">Guia da Casa Descomplicada</h2>
-        <div className="mx-auto mt-4 max-w-2xl space-y-4 text-center text-lg text-muted-foreground">
-          <p>Sua casa não vive bagunçada por falta de esforço. Vive bagunçada por falta de sistema.</p>
-          <p>O app tira a decisão da sua cabeça: cada dia da semana já tem suas 3 tarefas. Você abre, faz e marca.</p>
-        </div>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {benefits.map(([i, t, d]) => <div key={t} className="rounded-lg border bg-card p-6"><h3 className="text-2xl">{i} {t}</h3><p className="mt-2 text-muted-foreground">{d}</p></div>)}
+      <section className="mx-auto max-w-6xl py-16">
+        <h2 className="px-5 text-center text-4xl md:text-5xl">Veja por dentro do Aplicativo</h2>
+        <p className="mt-3 text-center font-bold text-primary">Arraste pro lado para ver →</p>
+        <div className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-4">
+          {telas.map((src, i) => (
+            <img key={src} src={src} alt={`Tela ${i + 1} do aplicativo`} loading="lazy" className="w-[75%] max-w-xs shrink-0 snap-center rounded-3xl shadow-xl" />
+          ))}
         </div>
       </section>
 
