@@ -113,38 +113,6 @@ function Index() {
       </section>
 
 
-      <section className="bg-muted py-16">
-        <div className="mx-auto max-w-3xl px-5">
-          <h2 className="text-3xl md:text-4xl">Veja um dia da sua rotina</h2>
-          <p className="mt-4 text-lg text-muted-foreground">Quarta-feira. Três tarefas, nada mais:</p>
-          <ul className="mt-6 space-y-4 text-lg">
-            <li>☐ Zona: trocar a roupa de cama</li>
-            <li>☐ Fluxo: lavar toalhas e lençóis</li>
-            <li>☐ Reset de 5 minutos: louça, bancada e lixo</li>
-          </ul>
-          <p className="mt-6 font-bold text-primary">Sem pensar no que fazer. Só abrir e marcar.</p>
-        </div>
-      </section>
-
-      <section className="bg-secondary py-16">
-        <div className="mx-auto grid max-w-5xl items-center gap-10 px-5 md:grid-cols-2">
-          <div>
-            <h2 className="text-3xl md:text-4xl">Veja um truque de dentro do app</h2>
-            <p className="mt-4 text-secondary-foreground">Lê em 30 segundos, aplica na hora. Sem enrolação.</p>
-          </div>
-          <div className="rounded-2xl bg-card p-6 shadow-xl">
-            <p className="text-sm font-bold text-primary">02 • Limpeza Eficiente</p>
-            <h3 className="mt-1 text-2xl">Panela queimada sem esfregar</h3>
-            <p className="mt-4 text-sm font-bold">Você vai precisar</p>
-            <div className="mt-2 flex flex-wrap gap-2">
-              {["Bicarbonato", "Vinagre", "Água"].map((x) => <span key={x} className="rounded-full bg-accent px-3 py-1 text-sm">{x}</span>)}
-            </div>
-            <p className="mt-4 text-sm font-bold">Como fazer</p>
-            <p className="mt-1 text-muted-foreground">Cubra o fundo com bicarbonato, adicione vinagre e aqueça por 5 min. Depois de esfriar, a crosta solta fácil.</p>
-          </div>
-        </div>
-      </section>
-
       <section className="mx-auto max-w-5xl px-5 py-16">
         <h2 className="text-center text-3xl md:text-4xl">Como funciona</h2>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
