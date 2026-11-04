@@ -67,8 +67,8 @@ const objections = [
 const faqs = [
   ["É mensalidade?", "Não. Pagamento único de R$ 10."],
   ["Preciso comprar produtos caros?", "Não. A maioria dos truques usa vinagre, limão, bicarbonato e itens comuns de casa."],
-  ["Funciona no meu celular?", "Funciona em iPhone e Android, direto pelo navegador."],
-  ["Tenho pouco tempo, serve pra mim?", "Serve. São cerca de 20 minutos por dia, e nos dias corridos você pode fazer só o Reset de 5 minutos."],
+  ["Funciona no meu celular?", "Funciona em iPhone e Android, direto pelo navegador, e também no seu Computador."],
+  ["Tenho pouco tempo, serve pra mim?", "Serve. São a partir de 30 minutos por dia, e nos dias corridos você pode fazer só o Reset básico de poucos minutos."],
   ["E se eu não gostar?", "Você tem 7 dias de garantia e recebe 100% de volta."],
   ["Como recebo o acesso?", "Logo após o pagamento, você recebe o acesso para abrir o app no celular."],
   ["Meu progresso fica salvo?", "Fica salvo no aparelho e no navegador em que você usa o app."],
