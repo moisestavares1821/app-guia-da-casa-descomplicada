@@ -94,7 +94,7 @@ function Index() {
   return (
     <main className="overflow-x-hidden">
       <div className="bg-ink px-5 py-3 text-center text-sm font-semibold text-ink-foreground">
-        🔥 Oferta de lançamento: R$10,00 depois R$37,00
+        🔥 Oferta de lançamento: apenas R$27
       </div>
 
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 md:grid-cols-2 md:py-20">
@@ -146,9 +146,9 @@ function Index() {
           <ul className="mx-auto mt-6 max-w-md space-y-2 text-left">
             {["Rotina de 7 dias pronta, com 3 tarefas por dia (Zona, Fluxo e Reset)", "Rotina estratégica já pronta", "30 truques caseiros passo a passo", "Dia, Mês e Semana com checklist pronto para marcar", "Acesso no celular e computador, quando quiser", "Troque o dia ou a tarefa quando precisar"].map((x) => <li key={x}>✔ {x}</li>)}
           </ul>
-          <p className="mt-8 text-6xl font-extrabold">R$10</p>
+          <p className="mt-8 text-6xl font-extrabold">R$27</p>
           <p className="mb-8 mt-2 opacity-80">pagamento único • sem mensalidade</p>
-          <Cta label="LIBERAR MEU ACESSO POR R$10 →" note="🔒 Compra segura • Acesso imediato" />
+          <Cta label="LIBERAR MEU ACESSO!" note="🔒 Compra segura • Acesso imediato" />
         </div>
       </section>
 
