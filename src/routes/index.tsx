@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import heroAsset from "@/assets/antes-depois.webp.asset.json";
+import phoneMockup from "@/assets/phone-mockup.png";
 const hero = heroAsset.url;
 import b1 from "@/assets/bonus-1.webp.asset.json";
 import b2 from "@/assets/bonus-2.webp.asset.json";
@@ -118,10 +119,11 @@ function Index() {
       <section className="mx-auto max-w-6xl py-16">
         <h2 className="px-5 text-center text-4xl md:text-5xl">Como acesso o Aplicativo?</h2>
         <p className="mt-3 text-center font-bold text-primary">Veja abaixo o tutorial:</p>
-        <div className="mx-auto mt-8 w-[min(300px,80vw)] rounded-[2.75rem] border-[10px] border-ink bg-ink p-1 shadow-2xl">
-          <div className="mx-auto mb-2 h-1.5 w-16 rounded-full bg-ink-foreground/30" />
-          <div className="relative overflow-hidden rounded-[2rem]" style={{ aspectRatio: "9 / 16" }}>
-            <iframe src="https://player.vimeo.com/video/1243569411?title=0&byline=0&portrait=0" title="Tutorial: como acessar o aplicativo" loading="lazy" allow="fullscreen; picture-in-picture" allowFullScreen className="absolute inset-0 h-full w-full" />
+        <div className="relative mx-auto mt-10 w-[min(330px,82vw)]" style={{ aspectRatio: "1024 / 1920" }}>
+          <img src={phoneMockup} alt="" aria-hidden="true" width={1024} height={1920} loading="lazy" className="absolute inset-0 h-full w-full drop-shadow-2xl" />
+          <div className="absolute overflow-hidden bg-screen" style={{ left: "9.08%", right: "9.08%", top: "1.51%", bottom: "1.67%", borderRadius: "13.96% / 6.29%" }}>
+            <iframe src="https://player.vimeo.com/video/1243569411?title=0&byline=0&portrait=0" title="Tutorial: como acessar o aplicativo" loading="lazy" allow="fullscreen; picture-in-picture" allowFullScreen className="h-full w-full" />
+            <div aria-hidden="true" className="absolute left-1/2 -translate-x-1/2 rounded-full bg-screen" style={{ top: "3%", width: "26%", height: "3.2%" }} />
           </div>
         </div>
       </section>

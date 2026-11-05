@@ -35,6 +35,7 @@
   --color-cta-foreground: var(--cta-foreground);
   --color-ink: var(--ink);
   --color-ink-foreground: var(--ink-foreground);
+  --color-screen: var(--screen);
 }
 
 :root {
@@ -62,6 +63,7 @@
   --cta-foreground: oklch(0.99 0.01 140);
   --ink: oklch(0.3 0.1 258);
   --ink-foreground: oklch(0.97 0.01 240);
+  --screen: oklch(0.11 0.004 258);
   --shadow-cta: 0 14px 30px -10px color-mix(in oklab, var(--cta) 60%, transparent);
 }
 
