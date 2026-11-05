@@ -103,8 +103,8 @@ function Index() {
       </section>
 
       <section className="mx-auto max-w-6xl py-16">
-        <h2 className="px-5 text-center text-4xl md:text-5xl">Veja por dentro do Aplicativo</h2>
-        <p className="mt-3 text-center font-bold text-primary">Arraste pro lado para ver →</p>
+        <h2 className="px-5 text-center text-4xl md:text-5xl">Como acesso o Aplicativo?</h2>
+        <p className="mt-3 text-center font-bold text-primary">Veja abaixo o tutorial:</p>
         <div className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-4">
           {telas.map((src, i) => (
             <img key={src} src={src} alt={`Tela ${i + 1} do aplicativo`} loading="lazy" className="w-[75%] max-w-xs shrink-0 snap-center rounded-3xl shadow-xl" />
@@ -114,7 +114,7 @@ function Index() {
 
 
       <section className="mx-auto max-w-5xl px-5 py-16">
-        <h2 className="text-center text-3xl md:text-4xl">Como funciona</h2>
+        <h2 className="text-center text-3xl md:text-4xl">Bônus Exclusivo: Você ainda leva a versão imprimível do Aplicativo!</h2>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {steps.map(([n, t, d]) => <div key={n} className="text-center"><div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary text-2xl font-bold text-primary-foreground">{n}</div><h3 className="mt-4 text-2xl">{t}</h3><p className="mt-1 text-muted-foreground">{d}</p></div>)}
         </div>
