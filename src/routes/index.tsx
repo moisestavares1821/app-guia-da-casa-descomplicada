@@ -2,10 +2,15 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import heroAsset from "@/assets/antes-depois.webp.asset.json";
 const hero = heroAsset.url;
-import tela1 from "@/assets/app-tela-1.webp.asset.json";
-import tela2 from "@/assets/app-tela-2.webp.asset.json";
-import tela3 from "@/assets/app-tela-3.webp.asset.json";
-import tela4 from "@/assets/app-tela-4.webp.asset.json";
+import b1 from "@/assets/bonus-1.webp.asset.json";
+import b2 from "@/assets/bonus-2.webp.asset.json";
+import b3 from "@/assets/bonus-3.webp.asset.json";
+import b4 from "@/assets/bonus-4.webp.asset.json";
+import b5 from "@/assets/bonus-5.webp.asset.json";
+import b6 from "@/assets/bonus-6.webp.asset.json";
+import d1 from "@/assets/depoimento-1.webp.asset.json";
+import d2 from "@/assets/depoimento-2.webp.asset.json";
+import d3 from "@/assets/depoimento-3.webp.asset.json";
 import { Button } from "@/components/ui/button";
 import { initMetaPixel, trackInitiateCheckout } from "@/lib/meta-pixel";
 
@@ -50,13 +55,21 @@ const pains = [
   "“Já esqueci o que eu tinha feito.” Sem registro, não lembra o que já foi feito, nem vê o progresso.",
 ];
 
-const telas = [tela1.url, tela2.url, tela3.url, tela4.url];
+const bonus = [b1.url, b2.url, b3.url, b4.url, b5.url, b6.url];
+const depoimentos = [d1.url, d2.url, d3.url];
 
-const steps = [
-  ["1", "Compre por R$10", "Pagamento rápido e seguro."],
-  ["2", "Abra o app no celular", "Instala na tela inicial em poucos toques."],
-  ["3", "Siga o dia", "Faça as 3 tarefas e marque."],
-];
+function Marquee({ images, alt, itemClass }: { images: string[]; alt: string; itemClass: string }) {
+  const list = [...images, ...images];
+  return (
+    <div className="mt-10 overflow-hidden">
+      <div className="animate-marquee flex w-max gap-4 px-2">
+        {list.map((src, i) => (
+          <img key={i} src={src} alt={`${alt} ${(i % images.length) + 1}`} loading="lazy" aria-hidden={i >= images.length} className={`shrink-0 rounded-2xl shadow-xl ${itemClass}`} />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 const objections = [
   ['"Dica de limpeza eu acho de graça na internet."', "Acha, soltas, e perde tempo escolhendo. Aqui você tem a ordem pronta: o que fazer, em que dia, em quanto tempo."],
@@ -105,19 +118,23 @@ function Index() {
       <section className="mx-auto max-w-6xl py-16">
         <h2 className="px-5 text-center text-4xl md:text-5xl">Como acesso o Aplicativo?</h2>
         <p className="mt-3 text-center font-bold text-primary">Veja abaixo o tutorial:</p>
-        <div className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-4">
-          {telas.map((src, i) => (
-            <img key={src} src={src} alt={`Tela ${i + 1} do aplicativo`} loading="lazy" className="w-[75%] max-w-xs shrink-0 snap-center rounded-3xl shadow-xl" />
-          ))}
+        <div className="mx-auto mt-8 w-[min(300px,80vw)] rounded-[2.75rem] border-[10px] border-ink bg-ink p-1 shadow-2xl">
+          <div className="mx-auto mb-2 h-1.5 w-16 rounded-full bg-ink-foreground/30" />
+          <div className="relative overflow-hidden rounded-[2rem]" style={{ aspectRatio: "9 / 16" }}>
+            <iframe src="https://player.vimeo.com/video/1243569411?title=0&byline=0&portrait=0" title="Tutorial: como acessar o aplicativo" loading="lazy" allow="fullscreen; picture-in-picture" allowFullScreen className="absolute inset-0 h-full w-full" />
+          </div>
         </div>
       </section>
 
 
-      <section className="mx-auto max-w-5xl px-5 py-16">
-        <h2 className="text-center text-3xl md:text-4xl">Bônus Exclusivo: Você ainda leva a versão imprimível do Aplicativo!</h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {steps.map(([n, t, d]) => <div key={n} className="text-center"><div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary text-2xl font-bold text-primary-foreground">{n}</div><h3 className="mt-4 text-2xl">{t}</h3><p className="mt-1 text-muted-foreground">{d}</p></div>)}
-        </div>
+      <section className="mx-auto max-w-5xl overflow-hidden px-5 py-16">
+        <h2 className="text-center text-3xl md:text-4xl"><span className="text-primary">Bônus Exclusivo:</span> Você ainda leva a versão imprimível do Aplicativo!</h2>
+        <Marquee images={bonus} alt="Página imprimível" itemClass="w-56 md:w-72" />
+      </section>
+
+      <section className="bg-muted py-16">
+        <h2 className="px-5 text-center text-3xl md:text-4xl">O que dizem quem já usa</h2>
+        <Marquee images={depoimentos} alt="Depoimento de cliente no WhatsApp" itemClass="w-64 md:w-80" />
       </section>
 
       <section className="bg-ink py-16 text-ink-foreground">
