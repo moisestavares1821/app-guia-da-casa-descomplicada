@@ -140,15 +140,46 @@ function Index() {
       </section>
 
       <section className="bg-ink py-16 text-ink-foreground">
-        <div className="mx-auto max-w-2xl px-5 text-center">
-          <h2 className="text-3xl md:text-5xl">Menos que um desinfetante</h2>
-          <p className="mt-4 opacity-80">Um desinfetante custa mais que isso. Você leva tudo:</p>
-          <ul className="mx-auto mt-6 max-w-md space-y-2 text-left">
-            {["Rotina de 7 dias pronta, com 3 tarefas por dia (Zona, Fluxo e Reset)", "Rotina estratégica já pronta", "30 truques caseiros passo a passo", "Dia, Mês e Semana com checklist pronto para marcar", "Acesso no celular e computador, quando quiser", "Troque o dia ou a tarefa quando precisar"].map((x) => <li key={x}>✔ {x}</li>)}
-          </ul>
-          <p className="mt-8 text-6xl font-extrabold">R$27</p>
-          <p className="mb-8 mt-2 opacity-80">pagamento único • sem mensalidade</p>
-          <Cta label="LIBERAR MEU ACESSO!" note="🔒 Compra segura • Acesso imediato" />
+        <div className="mx-auto max-w-xl px-5">
+          <h2 className="text-center text-3xl md:text-5xl">Menos que um desinfetante</h2>
+          <p className="mt-4 text-center opacity-80">Um desinfetante custa mais que isso. Você leva tudo:</p>
+
+          <div className="relative mt-12 rounded-[2rem] border-2 border-primary bg-card p-6 pt-9 text-card-foreground shadow-2xl sm:p-8 sm:pt-10">
+            <span className="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-primary px-5 py-2 text-[11px] font-extrabold uppercase tracking-[0.14em] text-primary-foreground">
+              ★ Oferta de lançamento
+            </span>
+
+            <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-primary">Acesso completo</p>
+
+            <div className="mt-3 flex flex-wrap items-end gap-x-3 gap-y-1">
+              <span className="text-lg font-semibold text-muted-foreground line-through">R$ 37</span>
+              <span className="text-6xl font-extrabold leading-none text-primary">
+                R$27<span className="align-super text-2xl">,00</span>
+              </span>
+            </div>
+            <p className="mt-2 text-sm text-muted-foreground">Pagamento único • sem mensalidade • acesso imediato</p>
+
+            <ul className="mt-6 space-y-2.5 border-t border-border pt-6">
+              {[
+                "O aplicativo completo: rotina do dia, da semana e do mês",
+                "3 tarefas por dia, com checklist pronto para marcar",
+                "Troque tarefas, crie as suas e veja seu progresso",
+                "30 truques caseiros passo a passo",
+                "Bônus: versão imprimível do aplicativo (6 páginas)",
+                "Acesso no celular e no computador",
+                "Garantia incondicional de 7 dias",
+              ].map((x) => (
+                <li key={x} className="flex gap-3 text-[15px] leading-snug">
+                  <span className="shrink-0 font-extrabold text-primary">✓</span>
+                  <span>{x}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-8">
+              <Cta label="LIBERAR MEU ACESSO!" note="🔒 Compra segura • Garantia de 7 dias" />
+            </div>
+          </div>
         </div>
       </section>
 

@@ -59,8 +59,8 @@
   --border: oklch(0.9 0.02 240);
   --input: oklch(0.9 0.02 240);
   --ring: oklch(0.55 0.17 252);
-  --cta: oklch(0.62 0.17 150);
-  --cta-foreground: oklch(0.99 0.01 140);
+  --cta: oklch(0.52 0.19 255);
+  --cta-foreground: oklch(0.99 0.01 240);
   --ink: oklch(0.3 0.1 258);
   --ink-foreground: oklch(0.97 0.01 240);
   --screen: oklch(0.11 0.004 258);
